@@ -1,0 +1,27 @@
+คำสั่งเชื่อม github= ssh -T git@github.com
+gitclone คำสั่ง = git clone git@github.com:poohktt/poohktt.git
+                git clone git@github.com:poohktt/risingsun
+
+สถานะของ file (ที่ยังไม่ commit)
+stage  พร้อมจะ commit
+unstage เป็น  file ที่ถูกแก้ไข ยังไม่พร้อมcommit
+untrack เป็น file ที่ถูกสร้างขึ้นมาใหม่ ยังไม่ถูกtrack โดย git
+Deleated เป็น file ที่ถูกลบไปแล้ว
+git add (file) จะเปลี่ยน สถานะ  จาก unstage เป็น stage
+หลังจากนั้น ให้ ใช้ git commit ให้สถานะเป็น ถาวร ที่ repository
+ถ้าเชื่อมกับ github แล้วตามคำสั่งข้างบน ให้ใช้คำสั่ง  git push origin master
+ผลคือ Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 320 bytes | 320.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+กลับไปดูที่ github จะเห็นว่า file เปลี่ยนแปลงไปแล้ว
+สรุปคำสั่งจากปฎิภานแชนแนล โดย ประมาณ
+git init ใช้สร้าง Git repository
+git status ใช้ตรวจสถานะ file ทั้งหมด ในรีโพนี้
+git add เพิ่มไฟล์ ในพื้นที่ทำงาน 
+gid dif ตรวจสอบไฟล์ที่ถาวร คอมมิท แล้ว กับไฟล์ที่แอด
+git commit บันทึกสถานะถาวร
+git log แสดงสถานะ ไฟล์ที่คอมมิททั้งหมด
+
